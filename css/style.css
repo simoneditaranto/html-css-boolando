@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* reset */
+
+nav{
+    padding: 15px;
+
+    background-color: #FF6900;
+}
+
+.nav-container{
+    border: 2px solid black;
+    height: 50px;
+    /* test */
+    display: flex;
+    justify-content: space-between;
+
+    width: 1450px;
+
+    margin: auto;
+}
+
+.nav-container div{
+    border: 2px solid black;
+    height: 50px;
+    /* test */
+
+    width: 200px;
+}
+
