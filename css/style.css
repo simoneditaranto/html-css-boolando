@@ -23,11 +23,6 @@ a{
    
    color: white;
 }
-
-.info{
-    position: absolute;
-    bottom: 50px;
-}
 /* fine elementi comuni alla pagina */
 
 
@@ -66,7 +61,11 @@ nav .container .options{
 main .container{
     flex-wrap: wrap;
 }
+/* fine sezione main */
 
+
+
+/* sezione card */
 .card-container{
     width: calc(100% / 3);
 
@@ -75,15 +74,36 @@ main .container{
     margin-bottom: 50px;
 }
 
-main .container .card-container .photo{
+.card-container .photo{
     position: relative;
 }
 
-main .container .card-container .photo .image :hover{
+.card-container .photo .image :hover{
     content: url('../img/1b.webp');
 }
 
-main .container .card-container .photo .image img{
+.card-container .photo .image.second :hover{
+    content: url('../img/2b.webp');
+}
+
+.card-container .photo .image.third :hover{
+    content: url('../img/3b.webp');
+}
+
+.card-container .photo .image.nth-four :hover{
+    content: url('../img/4b.webp');
+}
+
+.card-container .photo .image.nth-five :hover{
+    content: url('../img/5b.webp');
+}
+
+.card-container .photo .image.nth-six :hover{
+    content: url('../img/6b.webp');
+}
+
+
+.card-container .photo .image img{
     width: 100%
 }
 
@@ -106,36 +126,42 @@ main .container .card-container .photo .image img{
     font-size: 25px;
 }
 
-.info.discount{
+.info{
+    display: flex;
+    gap: 5px;
+
+    position: absolute;
+    bottom: 50px;
+}
+
+.info .discount{
     padding: 5px;
 
     color: white;
     background-color: red;
 }
 
-.info.sustainable{
-    left: 50px;
-
+.info .sustainable{
     padding: 5px 10px;
 
     color: white;
     background-color: green;
 }
 
-main .container .card-container .description .type{
+.card-container .description .type{
     font-weight: bold;
 }
 
-main .container .card-container .description .price{
+.card-container .description .price{
     color: red;
 }
 
-main .container .card-container .description .original-price{
+.card-container .description .original-price{
     color: black;
     text-decoration: line-through;
 }
+/* fine sezione card */
 
-/* fine sezione main */
 
 
 
