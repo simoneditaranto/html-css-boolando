@@ -18,6 +18,11 @@
     margin: auto;
 }
 
+a{
+   text-decoration: none;
+   
+   color: white;
+}
 
 
 /* sezione navbar */
@@ -34,11 +39,17 @@ nav .container{
 }
 
 nav .container div{
-    border: 2px solid black;
-    height: 50px;
-    /* test */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+nav .container .logo img{
     width: 200px;
+}
+
+nav .container .options{
+    text-align: right;
 }
 /* fine sezione navbar */
 
