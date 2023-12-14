@@ -121,7 +121,7 @@ main .container{
     background-color: white;
 }
 
-.heart{
+.favourite .heart{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,6 +129,11 @@ main .container{
 
     font-size: 25px;
 }
+
+.favourite .heart:hover{
+    color: red;
+}
+
 
 .info{
     display: flex;
