@@ -5,7 +5,7 @@
 }
 /* reset */
 
-
+/* elementi comuni alla pagina */
 .container{
     border: 2px solid violet;
     height: 100%;
@@ -23,6 +23,13 @@ a{
    
    color: white;
 }
+
+.info{
+    position: absolute;
+    bottom: 50px;
+}
+/* fine elementi comuni alla pagina */
+
 
 
 /* sezione navbar */
@@ -61,15 +68,75 @@ main .container{
 }
 
 .card-container{
-    border: 2px solid red;
-    height: 730px;
-    /* test */
-
     width: calc(100% / 3);
+
+    padding: 20px;
 
     margin-bottom: 50px;
 }
+
+main .container .card-container .photo{
+    position: relative;
+}
+
+main .container .card-container .photo .image :hover{
+    content: url('../img/1b.webp');
+}
+
+main .container .card-container .photo .image img{
+    width: 100%
+}
+
+.favourite{
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    width: 45px;
+    height: 50px;
+    background-color: white;
+}
+
+.heart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 25px;
+}
+
+.info.discount{
+    padding: 5px;
+
+    color: white;
+    background-color: red;
+}
+
+.info.sustainable{
+    left: 50px;
+
+    padding: 5px 10px;
+
+    color: white;
+    background-color: green;
+}
+
+main .container .card-container .description .type{
+    font-weight: bold;
+}
+
+main .container .card-container .description .price{
+    color: red;
+}
+
+main .container .card-container .description .original-price{
+    color: black;
+    text-decoration: line-through;
+}
+
 /* fine sezione main */
+
 
 
 /* sezione footer */
