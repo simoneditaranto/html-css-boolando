@@ -7,10 +7,6 @@
 
 /* elementi comuni alla pagina */
 .container{
-    border: 2px solid violet;
-    height: 100%;
-    /* test */
-
     display: flex;
 
     width: 1450px;
@@ -29,9 +25,13 @@ a{
 
 /* sezione navbar */
 nav{
-    padding: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
-    margin-bottom: 55px;
+    width: 100%;
+
+    padding: 15px;
 
     background-color: #FF6900;
 }
@@ -58,6 +58,10 @@ nav .container .options{
 
 
 /* sezione main */
+main{
+    margin-top: 100px;
+}
+
 main .container{
     flex-wrap: wrap;
 }
@@ -153,6 +157,8 @@ main .container{
 }
 
 .card-container .description .price{
+    font-weight: bold;
+
     color: red;
 }
 
@@ -167,6 +173,8 @@ main .container{
 
 /* sezione footer */
 footer{
+    padding: 30px;
+
     background-color: #1A1A1A;
 }
 
@@ -174,13 +182,28 @@ footer .container{
     justify-content: space-between;
 }
 
-footer .container div{
-    width: 400px;
-    height: 50px;
-    border: 2px solid red;
-    /* test */
+#boolando{
+    font-weight: bold;
+}
 
+.links .list-link{
+    display: flex;
+    gap: 5px;
 
+    margin-top: 10px;
+}
+
+.social #social-text{
+    font-weight: bold;
+
+    color: white;
+}
+
+.social .social-icon{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
 }
 /* fine sezione footer */
 
